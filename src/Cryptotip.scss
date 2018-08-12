@@ -1,0 +1,268 @@
+$modal-bg-color: #fefefe;
+$radius: 5px;
+$field-height: 3rem;
+$spacing: 1rem;
+$grey: #9e9e9e;
+$darker-orange: #ff6038;
+$bitcoin-orange: #ff9900;
+$brighter-orange: #ffc11d;
+$white: #fff;
+
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+#cryptotip {
+    font-family: 'Roboto', sans-serif;
+
+    .donation-button {
+        background: $white;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        border: 1px solid $grey;
+        border-radius: $radius;
+        padding: $spacing;
+
+        .bitcoin-logo {
+            margin-right: $spacing;
+        }
+
+        .donate-text {
+            margin: 0;
+        }
+    }
+
+    .donation-button:hover {
+        box-shadow: 0 0 5px $grey;
+    }
+
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        padding-top: 100px; /* Location of the box */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0); /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+
+        .modal-content {
+            background-color: $modal-bg-color;
+            margin: auto;
+            padding: $spacing;
+            border: 1px solid $grey;
+            border-radius: $radius;
+            max-width: 28rem;
+            min-width: 20rem;
+            width: 80%;
+
+            .header {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-bottom: 2*$spacing;
+
+                .title {
+                    margin: 0 auto;
+                    align-self: center;
+                    font-weight: bold;
+                    line-height: 1rem;
+                }
+
+                .close {
+                    align-self: flex-end;
+                    color: $grey;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    line-height: 1rem;
+                }
+                .close:hover,
+                .close:focus {
+                    color: #000;
+                    text-decoration: none;
+                    cursor: pointer;
+                }
+            }
+
+            label {
+                display: none;
+            }
+
+            input {
+                height: $field-height;
+                border: 1px solid $grey;
+                padding: 0 $spacing;
+            }
+
+            .amount-label {
+                margin-bottom: $spacing;
+                font-weight: bold;
+            }
+
+            .amount {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding-bottom: $spacing;
+
+                .currency {
+                    display: flex;
+                    flex-grow: 1;
+                    align-items: center;
+
+                    input {
+                        border: 1px solid $grey;
+                        border-right: 0;
+                        border-top-left-radius: $radius;
+                        border-bottom-left-radius: $radius;
+                        color: $grey;
+
+                        width: 1rem;
+                        flex-grow: 1;
+                    }
+
+                    input.invalid {
+                        border: 1px solid red;
+                        border-right: 0;
+                    }
+
+                    div.invalid {
+                        border: 1px solid red;
+                        border-left: 0;
+                    }
+
+                    div {
+                        height: $field-height;
+                        line-height: $field-height;
+                        padding: 0 $spacing;
+                        border: 1px solid $grey;
+                        border-left: 0;
+                        border-top-right-radius: $radius;
+                        border-bottom-right-radius: $radius;
+                        color: $grey;
+                    }
+                }
+
+                .separator {
+                    padding: 0 $spacing;
+                    color: $grey;
+                }
+            }
+
+            .message {
+                display: flex;
+                padding-bottom: 2*$spacing;
+                flex-direction: column;
+
+                input {
+                    flex-grow: 1;
+                    border-radius: $radius;
+                    color: $grey;
+                }
+            }
+
+            .payment-options {
+                display: flex;
+                flex-direction: row;
+                margin-bottom: $spacing;
+
+                button {
+                    flex: 50%;
+                    border: 0;
+                    outline: none;
+                    background-color: $bitcoin-orange;
+                    background: linear-gradient(40deg, $bitcoin-orange 35%, $brighter-orange 100%);
+                    color: $white;
+                    padding: $spacing;
+                }
+
+                button.active {
+                    opacity: 0.4;
+                }
+
+                .qr-code {
+                    border-top-left-radius: $radius;
+                    border-bottom-left-radius: $radius;
+                    border-right: 0;
+                }
+
+                .payment-uri {
+                    border-top-right-radius: $radius;
+                    border-bottom-right-radius: $radius;
+                }
+            }
+
+            p {
+                margin: 0 0 $spacing 0;
+            }
+
+            .bitcoin-address {
+                display: none;
+
+                .address-bar {
+                    padding-bottom: $spacing;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    input {
+                        border-top-left-radius: $radius;
+                        border-bottom-left-radius: $radius;
+                        flex-grow: 1;
+                        width: 1rem;
+                        color: $grey;
+                    }
+
+                    .copied {
+                        display: none;
+                        align-items: center;
+                        color: #fff;
+                        height: $field-height;
+                        line-height: $field-height;
+                        border: 1px solid $grey;
+                        border-left: 0;
+                        padding: 0 $spacing;
+                        background: #42e462;
+                    }
+
+                    .actions {
+                        display: flex;
+                        align-items: center;
+                        padding: 0 $spacing;
+                        border: 1px solid $grey;
+                        border-left: 0;
+                        height: $field-height;
+                        line-height: $field-height;
+                        border-top-right-radius: $radius;
+                        border-bottom-right-radius: $radius;
+
+                        .icon {
+                            color: $grey;
+                            cursor: pointer;
+                        }
+
+                        .link {
+                        }
+
+                        a {
+                            display: flex;
+                        }
+
+                        .copy {
+                            padding-right: $spacing;
+                        }
+                    }
+                }
+            }
+
+            .qrcode {
+                .qrcode-image {
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}
