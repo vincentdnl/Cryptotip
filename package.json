@@ -7,8 +7,8 @@
     "bitcoin",
     "donation"
   ],
-  "homepage": "",
-  "bugs": "",
+  "homepage": "https://vincentdnl.github.io/Cryptotip/",
+  "bugs": "https://github.com/vincentdnl/Cryptotip/issues",
   "licence": "Apache-2.0",
   "author": "Vincent Déniel",
   "private": false,
