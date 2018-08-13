@@ -43,4 +43,6 @@ Donation button for cryptocurrencies.
 
 ## Licenses
 
+See [LICENSE.md](LICENSE.md)
+
 Icons are under Creative Commons Attribution 4.0: [https://fontawesome.com/license](https://fontawesome.com/license)

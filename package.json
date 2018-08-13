@@ -9,7 +9,7 @@
   ],
   "homepage": "https://vincentdnl.github.io/Cryptotip/",
   "bugs": "https://github.com/vincentdnl/Cryptotip/issues",
-  "licence": "Apache-2.0",
+  "licence": "SEE LICENSE IN LICENSE.md",
   "author": "Vincent Déniel",
   "private": false,
   "dependencies": {
