@@ -13,7 +13,7 @@ Donation button for cryptocurrencies.
 ```html
 <head>
     ...
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vincentdnl/Cryptotip/master/build/static/css/main.d51372de.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/vincentdnl/Cryptotip/master/build/static/css/main.c0757ce9.css">
     ...
 </head>
 <body>
