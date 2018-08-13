@@ -4,6 +4,8 @@
 
 Donation button for cryptocurrencies.
 
+![coverage](coverage/badge-lines.svg)
+
 ## Usage
 
 1. import the css and js files

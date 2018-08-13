@@ -4,7 +4,8 @@
 /node_modules
 
 # testing
-/coverage
+/coverage/lcov-report/
+/coverage/lcov.info
 
 # misc
 .DS_Store
