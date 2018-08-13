@@ -1,5 +1,7 @@
 # Cryptotip
 
+![Cryptotip screenshot](screenshot.png)
+
 Donation button for cryptocurrencies.
 
 ## Usage
