@@ -38,9 +38,9 @@ Donation button for cryptocurrencies.
 ## Reference
 
 * `data-bitcoin-address`: your bitcoin address
-* `data-bitcoin-label`: the label in the donation uri (see: https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki)
+* `data-bitcoin-label`: the label in the donation uri (see: [BIP-0021](https://github.com/bitcoin/bips/blob/master/bip-0021.mediawiki))
 * `data-modal-title`: the title that will be displayed on the modal
 
 ## Licenses
 
-Icons are under Creative Commons Attribution 4.0: https://fontawesome.com/license
+Icons are under Creative Commons Attribution 4.0: [https://fontawesome.com/license](https://fontawesome.com/license)
