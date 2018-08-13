@@ -201,6 +201,10 @@ $white: #fff;
             .bitcoin-address {
                 display: none;
 
+                p {
+                    text-align: center;
+                }
+
                 .address-bar {
                     padding-bottom: $spacing;
                     display: flex;
@@ -258,6 +262,10 @@ $white: #fff;
             }
 
             .qrcode {
+                p {
+                    text-align: center;
+                }
+
                 .qrcode-image {
                     display: flex;
                     justify-content: center;
